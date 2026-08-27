@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffe4ec;
+    /* overflow: hidden; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #ff4f9a;
+    animation: fadeIn 1.4s ease;
+    margin-top: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #ff8fb6;
+    margin-top: 10px;
+    animation: fadeIn 2s ease;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background: #ff77b7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    animation: fadeIn 2.5s ease;
+}
+
+.btn:hover {
+    background: #ff4f9a;
+    transform: scale(1.08);
+}
+
+.msg-title {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: #ff3f8a;
+    animation: fadeIn 2s ease;
+}
+
+.msg-list {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff6ea5;
+}
+
+.msg-list li {
+    display: none;
+    margin: 10px 0;
+    animation: fadeIn 2.5s ease;
+}
+
+.final-text {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #ff4f9a;
+    line-height: 1.6;
+    animation: fadeIn 2.5s ease;
+}
+
+.introBox {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn-yes, .btn-no {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    animation: fadeIn 2.5s ease;
+}
+
+.btn-yes {
+    background: #ff77b7;
+    color: white;
+}
+
+.btn-yes:hover {
+    background: #ff4f9a;
+    transform: scale(1.05);
+}
+
+.btn-no {
+    /* position: fixed; changed from relative/absolute */
+    background: #ffb3c9;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.reason-item {
+    display: flex;
+    justify-content: center; /* horizontal centering if needed */
+    align-items: center;     /* vertical centering */
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.reason-gif {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#stare {
+    width: 150px;   
+}
+
+.reason-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #ff6ea5;
+    line-height: 1.4;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}

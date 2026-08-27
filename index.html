@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffe4ec">
+    <title>MY THOUGHTS OF YOU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">  
+        
+        <section id="introBox" class="card">
+                <img src="stare.jpg" id="stare" class="hero-gif" alt="Cute stare">
+
+                <h1 class="title">ASSALAMUALAIKUM SAKINAH!</h1>
+                <p class="subtitle">Saya ada benda nak cakap</p>
+                <p class="subtitle">Nak dengar tak?</p>
+
+                <div class="button-row">
+                    <button class="btn btn-yes" type="button" onclick="start()">YES 🩷</button>
+                    <button class="btn btn-no" id="noBtn" type="button">NO 😢</button>
+                </div>
+            </section>
+        
+        <div id="messageBox" class="hidden">
+            <h2 class="msg-title">Saya nak bagitau yang ... </h2>
+            <ul class="msg-list" id="reasonList">
+                <li class="reason-item">
+                    <img src="bright.gif" class="reason-gif">
+                    <span>You make everything feel brighter 🌈</span>
+                    <img src="bright.gif" class="reason-gif">
+                </li>
+                <li class="reason-item">
+                    <img src="bright.gif" class="reason-gif">
+                    <span>Your smile is dangerous (in the best way) 😳</span>
+                    <img src="bright.gif" class="reason-gif">
+                </li>
+                <li class="reason-item">
+                    <img src="bright.gif" class="reason-gif">
+                    You have a heart that's too precious 💕
+                </li>
+                <li class="reason-item">
+                    <img src="bright.gif" class="reason-gif">
+                    You make me want to be better ✨
+                </li>
+                <li class="reason-item">
+                    <img src="bright.gif" class="reason-gif">
+                    And… you still make my heart go “dugeun dugeun” 😌
+                </li>
+            </ul>
+
+            <button class="btn" id="nextBtn">Next 💞</button>
+        </div>
+
+        <div id="finalBox" class="hidden">
+            <h2 class="msg-title">One last thing...</h2>
+
+            <div id="finalText" class="hidden">
+                <p class="final-text">
+                    I don’t know what the future holds,<br>
+                    but I just want you to know:<br><br>
+                    <strong>You still make my heart giggle. 💓</strong>
+                </p>
+            </div>
+            <button class="btn" id="finalNext">Next 💞</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
