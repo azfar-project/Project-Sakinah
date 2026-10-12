@@ -35,7 +35,7 @@ let index = 0;
 
 nextBtn.addEventListener("click", () => {
     if (index < items.length) {
-        items[index].style.display = "block";
+        items[index].style.display = "flex";
         items[index].style.opacity = 1;
         index++;
 
@@ -48,13 +48,18 @@ nextBtn.addEventListener("click", () => {
 });
 
 function moveRandomEl(elm) {
-    elm.style.position = "absolute";
-    elm.style.top = Math.floor(Math.random() * 90 + 5) + "%";
-    elm.style.left = Math.floor(Math.random() * 90 + 5) + "%";
+    elm.style.position = "fixed";
+    elm.style.top = Math.floor(Math.random() * 80 + 10) + "%";
+    elm.style.left = Math.floor(Math.random() * 80 + 10) + "%";
 }
 
 const moveRandom = document.querySelector("#noBtn");
 
 moveRandom.addEventListener("mouseenter", function (e) {
+    moveRandomEl(e.target);
+});
+
+moveRandom.addEventListener("touchstart", function (e) {
+    e.preventDefault();
     moveRandomEl(e.target);
 });
