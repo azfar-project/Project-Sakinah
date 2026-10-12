@@ -5,6 +5,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root {
+    --bg-gradient: linear-gradient(135deg, #ffd1dc 0%, #ffe4ec 50%, #fff0f5 100%);
+    --card-bg: rgba(255, 255, 255, 0.5);
+    --card-shadow: 0 12px 35px rgba(220, 80, 130, 0.18);
+    --primary-btn: linear-gradient(135deg, #ff4f8b, #ff72a1);
+    --primary-btn-hover: linear-gradient(135deg, #d81b60, #ff4f8b);
+    --no-btn: #f3b8c8;
+    --heading-color: #d81b60;
+    --text-color: #882d4f;
+    --gold-accent: #ffd700;
+}
+
 body {
     background: #ffe4ec url('assets/sakinah4.png') no-repeat center center fixed;
     background-size: cover;
@@ -28,56 +40,62 @@ body.bg-page3 {
 
 .container {
     text-align: center;
-    background: rgba(225, 225, 225, 0.6);
-    padding: 15px;
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: var(--card-shadow);
     width: 400px;
     max-width: 90%;
 }
 
 .title {
-    font-size: 1.1rem;
-    color: #ff4f9a;
+    font-size: 1.2rem;
+    color: var(--heading-color);
     margin-top: 15px;
     animation: fadeIn 1.4s ease;
+    text-shadow: 0 1px 2px rgba(216, 27, 96, 0.1);
 }
 
 .subtitle {
-    font-size: 0.9rem;
-    color: #ff8fb6;
+    font-size: 0.95rem;
+    color: var(--text-color);
     margin-top: 8px;
     animation: fadeIn 2s ease;
 }
 
-.btn {
+.btn, .play-btn {
     margin-top: 25px;
     padding: 12px 30px;
     font-size: 1rem;
     border-radius: 30px;
-    background: #ff77b7;
+    background: var(--primary-btn);
     color: white;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(255, 79, 139, 0.35);
 }
 
-.btn:hover {
-    background: #ff4f9a;
+.btn:hover, .play-btn:hover {
+    background: var(--primary-btn-hover);
     transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(216, 27, 96, 0.45);
 }
 
 .msg-title {
     margin-top: 20px;
     font-size: 1.5rem;
-    color: #ff3f8a;
+    color: var(--heading-color);
+    text-shadow: 0 1px 2px rgba(216, 27, 96, 0.1);
 }
 
 .msg-list {
     list-style: none;
     margin-top: 20px;
     font-size: 1.1rem;
-    color: #ff6ea5;
+    color: var(--text-color);
     padding: 0;
 }
 
@@ -90,7 +108,7 @@ body.bg-page3 {
 .final-text {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #ff4f9a;
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -119,13 +137,19 @@ body.bg-page3 {
 }
 
 .btn-yes {
-    background: #ff77b7;
+    background: var(--primary-btn);
     color: white;
+    box-shadow: 0 6px 18px rgba(255, 79, 139, 0.35);
+}
+
+.btn-yes:hover {
+    background: var(--primary-btn-hover);
+    transform: scale(1.05);
 }
 
 .btn-no {
-    background: #ffb3c9;
-    color: white;
+    background: var(--no-btn);
+    color: var(--text-color);
     touch-action: manipulation;
 }
 
