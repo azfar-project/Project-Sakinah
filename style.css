@@ -7,38 +7,36 @@
 
 body {
     background: #ffe4ec;
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 15px;
+    padding: 20px;
     overflow-x: hidden;
 }
 
 .container {
     text-align: center;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 500px;
 }
 
 .title {
-    font-size: clamp(11.8rem, 5vw, 2.5rem);
+    font-size: 2rem;
     color: #ff4f9a;
+    margin-top: 15px;
     animation: fadeIn 1.4s ease;
-    margin-top: 1rem;
 }
 
 .subtitle {
-    font-size: clamp(11.8rem, 5vw, 2.5rem);
+    font-size: 1.1rem;
     color: #ff8fb6;
-    margin-top: 10px;
+    margin-top: 8px;
     animation: fadeIn 2s ease;
 }
 
 .btn {
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 12px 30px;
     font-size: 1.1rem;
     border-radius: 30px;
@@ -46,8 +44,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-    transition: .3s;
-    animation: fadeIn 2.5s ease;
+    transition: 0.3s;
 }
 
 .btn:hover {
@@ -57,9 +54,8 @@ body {
 
 .msg-title {
     margin-top: 20px;
-    font-size: clamp(1.4rem, 4.5vw, 1.8rem);
+    font-size: 1.5rem;
     color: #ff3f8a;
-    animation: fadeIn 2s ease;
 }
 
 .msg-list {
@@ -73,24 +69,21 @@ body {
 .msg-list li {
     display: none;
     margin: 15px 0;
-    animation: fadeIn 2.5s ease;
+    animation: fadeIn 0.8s ease;
 }
 
 .final-text {
     margin-top: 20px;
-    font-size: clamp(1.1rem, 3.8vw, 1.3rem);
+    font-size: 1.2rem;
     color: #ff4f9a;
     line-height: 1.6;
-    animation: fadeIn 2.5s ease;
 }
 
 .introBox {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .button-row {
@@ -99,9 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    position: relative;
     width: 100%;
-    min-height: 60px;
 }
 
 .btn-yes, .btn-no {
@@ -110,7 +101,6 @@ body {
     border-radius: 30px;
     border: none;
     cursor: pointer;
-    transition: 0.2s;
 }
 
 .btn-yes {
@@ -118,52 +108,31 @@ body {
     color: white;
 }
 
-.btn-yes:hover {
-    background: #ff4f9a;
-    transform: scale(1.05);
-}
-
 .btn-no {
-    /* position: fixed; changed from relative/absolute */
     background: #ffb3c9;
     color: white;
     touch-action: manipulation;
-    /* padding: 12px 30px;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s; */
 }
 
 .reason-item {
     display: flex;
-    justify-content: center; /* horizontal centering if needed */
-    align-items: center;     /* vertical centering */
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin: 15px 0;
     flex-wrap: wrap;
 }
 
 .reason-gif {
-    width: clamp(70px, 18vw, 120px);
-    height: clamp(70px, 18vw, 120px);
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 10px;
-    flex-shrink: 0;
 }
 
 #stare {
-    width: clamp(120px, 35vw, 180px);
+    width: 140px;
     height: auto;
-}
-
-.reason-text {
-    display: flex;
-    align-items: center;
-    font-size: clamp(1rem, 3.5vw, 1.2rem);
-    color: #ff6ea5;
-    line-height: 1.4;
 }
 
 .hidden {
@@ -171,6 +140,6 @@ body {
 }
 
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
