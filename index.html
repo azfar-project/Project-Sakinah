@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#ffe4ec">
     <title>MY THOUGHTS OF YOU SAKINAH</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="video.css">
 </head>
 <body>
     <div class="container">  
@@ -52,6 +53,7 @@
         </div>
 
         <div id="finalBox" class="hidden">
+            <img src="assets/azfar3.png" id="stare" class="hero-gif" alt="Cute stare">
             <h2 class="msg-title">One last thing...</h2>
 
             <div id="finalText" class="hidden">
@@ -60,11 +62,29 @@
                     but I just want you to know:<br><br>
                     <strong>You still make my heart giggle. 💓</strong>
                 </p>
+
+                <div class="media-container" id="mediaContainer">
+                    <button type="button" class="play-btn" id="playBtn">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">Tekan sini, ade surprise 💖</span>
+                    </button>
+                </div>
             </div>
             <button class="btn" id="finalNext">Next 💞</button>
+        </div>
+
+        <div id="videoBox" class="hidden">
+            <h2 class="msg-title">For You, Sakinah 💖</h2>
+            <div class="media-container">
+                <video id="specialVideo" class="special-video" controls playsinline>
+                    <source src="assets/cash.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="video.js"></script>
 </body>
 </html>

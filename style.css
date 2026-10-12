@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ffe4ec url('assets/sakinah.png') no-repeat center center fixed;
+    background: #ffe4ec url('assets/sakinah4.png') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -17,34 +17,34 @@ body {
 }
 
 body.bg-page2 {
-    background: #ffe4ec url(assets/azfar.png) no-repeat center center fixed;
+    background: #ffe4ec url(assets/azfar2.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 body.bg-page3 {
-    background: #ffe4ec url(assets/stare.jpg) no-repeat center center fixed;
+    background: #ffe4ec url(assets/sakinah3.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 .container {
     text-align: center;
-    background: rgba(223, 223, 223, 0.85);
-    padding: 30px;
+    background: rgba(225, 225, 225, 0.6);
+    padding: 15px;
     border-radius: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    width: 500px;
+    width: 400px;
     max-width: 90%;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.1rem;
     color: #ff4f9a;
     margin-top: 15px;
     animation: fadeIn 1.4s ease;
 }
 
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #ff8fb6;
     margin-top: 8px;
     animation: fadeIn 2s ease;
@@ -53,7 +53,7 @@ body.bg-page3 {
 .btn {
     margin-top: 25px;
     padding: 12px 30px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 30px;
     background: #ff77b7;
     color: white;
@@ -112,7 +112,7 @@ body.bg-page3 {
 
 .btn-yes, .btn-no {
     padding: 12px 28px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 30px;
     border: none;
     cursor: pointer;
