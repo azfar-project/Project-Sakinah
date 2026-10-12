@@ -1,9 +1,12 @@
 function showSection() {
+    document.body.className = "bg-page2"
     document.getElementById("messageBox").classList.remove("hidden");
 }
 
 function showFinal() {
     const finalText = document.getElementById("finalText");
+
+    document.body.className = "bg-page3";
     document.getElementById("finalBox").classList.remove("hidden");
     document.getElementById("messageBox").style.display = "none";
     finalText.classList.add("hidden");

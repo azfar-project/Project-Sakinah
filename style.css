@@ -16,10 +16,24 @@ body {
     transition: background 0.6s ease-in-out;
 }
 
+body.bg-page2 {
+    background: #ffe4ec url(assets/azfar.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.bg-page3 {
+    background: #ffe4ec url(assets/stare.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 .container {
     text-align: center;
-    width: 100%;
-    max-width: 500px;
+    background: rgba(223, 223, 223, 0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    width: 500px;
+    max-width: 90%;
 }
 
 .title {
@@ -132,7 +146,7 @@ body {
 }
 
 #stare {
-    width: 140px;
+    width: 200px;
     height: auto;
 }
 
